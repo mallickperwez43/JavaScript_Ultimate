@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(149, 145, 145);
+    margin: 0;
+    padding: 15px 0;
+    color: white
+}
+
+ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+.container{
+    text-align: center;
+    text-transform: unset;
+    box-sizing: content-box;
+}
