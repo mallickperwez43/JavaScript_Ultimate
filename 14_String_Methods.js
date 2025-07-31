@@ -1,12 +1,12 @@
 const prompt = require("prompt-sync")();
 
 // string properties and methods 
-let name = "Harry";   
+let name = "Harry";
 
 // 1] length -> to get the length of the string // property  
-console.log(name.length);   
+console.log(name.length);
 // 2] convert to uppercase  // function / method 
-console.log(name.toUpperCase())  
+console.log(name.toUpperCase())
 // 3] convert to lowercase  // function / method   
 console.log(name.toLowerCase())
 // 4] substring method (2 parameter) 
@@ -18,7 +18,7 @@ console.log(name.replace("Har", "Per"));
 
 let friend = "Naman";
 // 7] concatination of string // even use + operator
-let name1 = name.concat(" is a friend of ", friend);   
+let name1 = name.concat(" is a friend of ", friend);
 // let name1 = name + friend;
 console.log(name1);
 // 8] trim -> remove whitespaces
@@ -47,7 +47,7 @@ let st = "";
 // console.log(st);
 
 // way3
-for(let index in s){
+for (let index in s) {
     st += s[index];
 }
 console.log(st);
