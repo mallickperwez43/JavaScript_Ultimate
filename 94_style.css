@@ -1,0 +1,148 @@
+/* ------------------------------------ */
+/* Global and Light Mode Styles */
+/* ------------------------------------ */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+.main-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    min-width: 300px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#current-time {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    transition: all 0.2s;
+}
+
+#alarm-controls {
+    margin-top: 20px;
+}
+
+#alarm-time {
+    border: 1px solid #121212 !important;
+    background-color: white;
+    color: #1e1e1e;
+    padding: 9px;
+    transition: background-color 0.3s;
+}
+
+#alarm-controls input,
+#alarm-controls button,
+#theme-toggle {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+#set-alarm-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stop-alarm-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Alarm Ringing Effect (Light Mode) */
+.alarm-ringing {
+    color: #f44336 !important;
+    animation: flash 0.4s infinite alternate;
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    to {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+}
+
+/* ------------------------------------ */
+/* Dark Mode Styles */
+/* ------------------------------------ */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .main-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode #current-time {
+    color: #e0e0e0;
+}
+
+body.dark-mode #alarm-controls label {
+    color: #bdbdbd;
+}
+
+body.dark-mode #alarm-controls input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode #alarm-time {
+    border-color: #555;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+/* Alarm Ringing Effect (Dark Mode) */
+body.dark-mode .alarm-ringing {
+    color: #ff9800 !important;
+    animation: dark-flash 0.4s infinite alternate;
+}
+
+@keyframes dark-flash {
+    from {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    to {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
